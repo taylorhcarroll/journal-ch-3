@@ -42,5 +42,103 @@
       "content": " test 4",
       "id": 6
     }
+  ],
+  "mood": [
+    {
+      "id": 1,
+      "name": "JOY"
+    },
+    {
+      "id": 2,
+      "name": "FEAR"
+    },
+    {
+      "id": 3,
+      "name": "ANGER"
+    },
+    {
+      "id": 4,
+      "name": "FRUSTRATION"
+    },
+    {
+      "id": 5,
+      "name": "ACCEPTANCE"
+    },
+    {
+      "id": 6,
+      "name": "EXCITEMENT"
+    },
+    {
+      "id": 7,
+      "name": "CONFUSION"
+    },
+    {
+      "id": 8,
+      "name": "CURIOSITY"
+    },
+    {
+      "id": 9,
+      "name": "SURPRISE"
+    },
+    {
+      "id": 10,
+      "name": "DETERMINATION"
+    },
+    {
+      "id": 11,
+      "name": "HOPE"
+    },
+    {
+      "id": 12,
+      "name": "ANXIETY"
+    },
+    {
+      "id": 13,
+      "name": "LOVE"
+    },
+    {
+      "id": 14,
+      "name": "SADNESS"
+    },
+    {
+      "id": 15,
+      "name": "WONDER"
+    },
+    {
+      "id": 16,
+      "name": "REJUVENATED"
+    },
+    {
+      "id": 17,
+      "name": "DRAINED"
+    },
+    {
+      "id": 18,
+      "name": "CONFIDENT"
+    },
+    {
+      "id": 19,
+      "name": "AMUSED"
+    },
+    {
+      "id": 20,
+      "name": "GUILTY"
+    },
+    {
+      "id": 21,
+      "name": "RELIEVED"
+    },
+    {
+      "id": 22,
+      "name": "INDIFFERENCE"
+    },
+    {
+      "id": 23,
+      "name": "GUCCI"
+    },
+    {
+      "id": 24,
+      "name": "PUMPED"
+    }
   ]
 }
