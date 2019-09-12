@@ -1,14 +1,11 @@
 console.log("If you can see this your data JS file is properly linked.")
-"concept": "Fetch API",
-      "date": "08/07/19",
-      "content": "We learned about array methods.",
-      "mood": "ok"
+
 //function to push input to database.json//
 const API = {
     getMood: () => {
         return fetch("http://localhost:8088/mood")
         .then(response => response.json())
-    }
+    },
     getJournalEntries: function() {
         return fetch("http://localhost:8088/journalArray")
         .then(response => 

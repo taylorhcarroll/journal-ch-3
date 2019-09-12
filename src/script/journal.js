@@ -7,19 +7,15 @@ API.getJournalEntries()
     //take data and add to DOM
     .then(data => injectDOM.addToDom(data));
 
-
-
-
 //create new journal entry and add to the DOM
 const makeJournalEntry = (date, mood, concept, content) => {
     const newJournalEntry = {
-        name: name,
-        type: type.name,
-        flavor: flavor.name,
-        glaze: glaze.name,
-        topping: topping.name
+        date: name,
+        mood: mood.name,
+        concept: concept.name,
+        content: content.name
     }
-    return newDonut
+    return newJournalEntry
 }
 
 	//add event listener for button
