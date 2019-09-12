@@ -1,4 +1,5 @@
 console.log("If you can see this your data JS file is properly linked.")
+//API station
 
 //function to push input to database.json//
 const API = {
@@ -6,13 +7,13 @@ const API = {
         return fetch("http://localhost:8088/mood")
         .then(response => response.json())
     },
-    getJournalEntries: function() {
+    getJournalEntries: () => {
         return fetch("http://localhost:8088/journalArray")
         .then(response => 
             response.json()
         );
     },
-    saveJournalEntry: function(entry) {
+    saveJournalEntry: () => {
         return fetch("http://localhost:8088/journalArray", {
             method: "POST",
             headers: {
@@ -20,7 +21,12 @@ const API = {
             },
             body: JSON.stringify(entry)
         });
-    }
+    },
+    deleteEntry: () => {
+        return fetch(`http://localhost:8088/journalArray${entryId}`, {
+            method: "DELETE"
+        })        
+    },
 };
 
 export default API
