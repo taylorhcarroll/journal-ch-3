@@ -1,0 +1,106 @@
+* {
+    
+    border: red 1px dotted;
+
+}
+
+body {
+    /* background-image: linear-gradient(teal, antiquewhite, white); */
+    margin: 7%;
+        font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+        /* background-color: #000; */
+        margin:0;
+        padding:0;
+        border-width:0;
+      
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* color: rgba(245, 134, 52, 1);
+    background-color: rgba(9, 63, 154, 1); */
+    border-radius: 5px;
+    background-color: rgba(245, 134, 52, 1);
+    color: rgba(6, 114, 191, 1);
+    padding-left: 1%;
+}
+
+header a:visited {
+    color: rgba(3, 38, 67, 1);
+}
+
+header h1 {
+    flex: 4;
+    color: coral;  
+}
+.header__nav {
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto; 
+    flex: 1; 
+} 
+
+
+.header__nav a {
+    color: coral;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.headerME {
+    text-align: center;
+}
+
+.journalWrapper {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+/* .journalEntry {
+    /* align-content: flex-end; }*/
+
+
+/*this is to float the titles on top of the fields*/
+fieldset {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+form {
+    color: rgba(221, 211, 222, 1);
+    background-color: rgba(6, 114, 191, 1);
+    
+    
+    
+}
+
+.button {
+    margin-left: 16px;
+    background-image: linear-gradient(rgba(6, 114, 191, 1), antiquewhite);
+}
+
+
+.test{
+color: rgba(3, 38, 67, 1);
+color: rgba(9, 63, 154, 1);
+color: rgba(6, 114, 191, 1);
+color: rgba(245, 134, 52, 1);
+color: rgba(221, 211, 222, 1);
+}
+
+.jContainer {
+    background: coral;
+    border-radius: 5px;
+}
+
+.entryLog {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+

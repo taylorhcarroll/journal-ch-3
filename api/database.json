@@ -1,0 +1,46 @@
+{
+  "journalArray": [
+    {
+      "id": 1,
+      "concept": "Fetch API",
+      "date": "08/07/19",
+      "content": "We learned about array methods.",
+      "mood": "ok"
+    },
+    {
+      "id": 2,
+      "concept": "Array methods",
+      "date": "08/06/19",
+      "content": "We learned about array methods.",
+      "mood": "ok"
+    },
+    {
+      "date": "2019-09-24",
+      "mood": "JOY",
+      "concept": "test",
+      "content": "test ",
+      "id": 3
+    },
+    {
+      "date": "2019-09-16",
+      "mood": "JOY",
+      "concept": "test2",
+      "content": " test2",
+      "id": 4
+    },
+    {
+      "date": "2019-09-10",
+      "mood": "JOY",
+      "concept": "test3",
+      "content": " test",
+      "id": 5
+    },
+    {
+      "date": "2019-09-10",
+      "mood": "JOY",
+      "concept": "test4",
+      "content": " test 4",
+      "id": 6
+    }
+  ]
+}
