@@ -4,15 +4,16 @@ import API from "./journalAPI.js";
 //drop down based on the mood in my resource array from database.json
 
 const dropdown = {
-    makeMoodDropDown: () => {
+    moodDropdown: () => {
         API.getMoods().then(moods => {
             console.log(moods);
-            const moodDropdown = document.querySelectorAll("#mood-Input")
+            const moodDropdown = document.querySelectorAll("#moody")
             moodDropdown.forEach(element => {
+                moods.forEach(mood => {
                 element.innerHTML += `<option id="mood-${mood.id}">${mood.name}</option>`;
             });
         });
-    }
+    });
 }
-
+};
 export default dropdown;

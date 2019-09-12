@@ -1,5 +1,6 @@
 //create html representation of journal entry
-const webComponent = (item) => {
+const webComponent = {
+    entryHTML: function(item) {
         return `
     <div class="jContainer">
     <h5><span>Date: ${item.date} </span> <span> Mood: ${item.mood} </span></h5>
@@ -8,6 +9,6 @@ const webComponent = (item) => {
     <button type="button" id="deleteEntry--${item.id}">Delete Entry</button>
     <div>
     `;
-}
+}};
 
 export default webComponent;

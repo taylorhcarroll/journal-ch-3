@@ -3,7 +3,7 @@ console.log("If you can see this your data JS file is properly linked.")
 
 //function to push input to database.json//
 const API = {
-    getMood: () => {
+    getMoods: () => {
         return fetch("http://localhost:8088/mood")
         .then(response => response.json())
     },
