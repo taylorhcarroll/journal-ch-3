@@ -7,17 +7,14 @@ console.log("If you can see this your journal JS file is properly linked.")
 dropdown.moodDropdown();
 
 //this makes sure we have journal entries on the page when it loads  
-API.getJournalEntries()
-        //sort entries here later
-    .then(data =>
-    injectDOM.addToDom(data));
+API.getJournalEntries().then(data => injectDOM.addToDom(data));
 
 
 
 //add event listener for submit button
-const addEntry = document.querySelector(".button")
+const addEntry = document.querySelector(".saveButton")
 	.addEventListener("click", event => {
-		// declare variables to form value
+		// declare variables from form values
 		let dateInput = document.querySelector("#date").value;
 		let moodInput = document.querySelector("#mood").value;
 		let conceptsInput = document.querySelector("#concept").value;
@@ -42,6 +39,7 @@ const addEntry = document.querySelector(".button")
             console.log(completedForm)
             API.saveJournalEntry(completedForm)
                 .then( () => {
+                    //clears entry log to be repopulated by the database with the new entry//
                     document.querySelector("#entryLog").innerHTML = ""
                     API.getJournalEntries()
                     //take data and add to DOM

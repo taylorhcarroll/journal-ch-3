@@ -7,6 +7,7 @@ const webComponent = {
     <p class="concept">Concepts Covered  ${item.concept} </p>
     <p>${item.content}</p>
     <button type="button" id="deleteEntry--${item.id}">Delete Entry</button>
+    <button type="button" id="editEntry--${item.id}">Edit Entry</button>
     <div>
     `;
 }};
