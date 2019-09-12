@@ -7,10 +7,10 @@ const dropdown = {
     moodDropdown: () => {
         API.getMoods().then(moods => {
             console.log(moods);
-            const moodDropdown = document.querySelectorAll("#moody")
+            const moodDropdown = document.querySelectorAll("#mood-Input")
             moodDropdown.forEach(element => {
                 moods.forEach(mood => {
-                element.innerHTML += `<option id="mood-${mood.id}">${mood.name}</option>`;
+                element.innerHTML += `<option id="type-${mood.id}" value="${mood.name}">${mood.name}</option>`;
             });
         });
     });
