@@ -5,8 +5,9 @@ import API from "./journalAPI";
 
 const dropdown = {
     makeMoodDropDown: () => {
-        API.getMood().then(allMoods => {
-            cont moodDropdown = document.querySelectorAll("#mood-Input")
+        API.getMood().then(moods => {
+            console.log(moods);
+            const moodDropdown = document.querySelectorAll("#mood-Input")
             moodDropdown.forEach(element => {
                 element.innerHTML += `<option id="mood-${mood.id}">${mood.name}</option>`
             });

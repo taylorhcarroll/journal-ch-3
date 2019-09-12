@@ -1,11 +1,14 @@
 console.log("If you can see this your journal JS file is properly linked.")
 import API from "/src/scripts/journalAPI.js";
 import injectDOM from "/src/scripts/entriesDOM.js";
+import dropdown from "./moodDropDown";
 
 // //retrieve journal entries from JSON
 API.getJournalEntries()
     //take data and add to DOM
     .then(data => injectDOM.addToDom(data));
+
+dropdown.makeMoodDropDown();
 
 //create new journal entry and add to the DOM
 const makeJournalEntry = (date, mood, concept, content) => {
