@@ -12,7 +12,7 @@ API.getJournalEntries().then(data => injectDOM.addToDom(data));
 
 
 //add event listener for submit button
-const addEntry = document.querySelector(".saveButton")
+document.querySelector("#saveButton")
 	.addEventListener("click", event => {
 		// declare variables from form values
 		let dateInput = document.querySelector("#date").value;
@@ -48,3 +48,7 @@ const addEntry = document.querySelector(".saveButton")
 
 
 }})
+
+//delete button to remove entries from json db and refresh DOM//
+const = document.querySelector("#entryLog").addEventListener("click", (event) => {
+    if (event.target.id.startsWith("deleteEntry--")) {

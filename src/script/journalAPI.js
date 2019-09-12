@@ -23,7 +23,7 @@ const API = {
         });
     },
     deleteEntry: (id) => {
-        return fetch(`http://localhost:8088/journalArray${id}`, {
+        return fetch(`http://localhost:8088/journalArray/${id}`, {
             method: "DELETE"
         }).then(response => response.json())        
     },
@@ -31,7 +31,7 @@ const API = {
         const entryUpdateObj = {
             name: document.querySelector("#entryName").value
         }
-        return fetch(`http://localhost:8088/journalArray${id}`,{
+        return fetch(`http://localhost:8088/journalArray/${id}`,{
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
