@@ -45,9 +45,10 @@
             </fieldset>
             <fieldset>
                   <label for="journalMood">Mood for the day</label>
-                  <select type="text" name="journalMood" id="mood-Input">
-                              <option value="MOOD">Select Your Mood</option>
-                              
+                  <select type="text" name="journalMood" id="mood">
+                           <optgroup id="mood-Input">
+                              <option disabled value="default">Select Your Mood</option>
+                           </optgroup> 
                   </select> 
             </fieldset>
             <button class="button" type="button">Submit</button>

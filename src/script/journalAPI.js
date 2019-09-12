@@ -13,7 +13,7 @@ const API = {
             response.json()
         );
     },
-    saveJournalEntry: () => {
+    saveJournalEntry: entry => {
         return fetch("http://localhost:8088/journalArray", {
             method: "POST",
             headers: {

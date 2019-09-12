@@ -33,20 +33,20 @@ const addEntry = document.querySelector(".button")
 			window.alert("What day did you learn this?");
 		} else {
         //create object
-        const completedForm = {
+            const completedForm = {
     				date: dateInput,
     				mood: moodInput,
     				concept: conceptsInput,
                     content: entryInput 
-        }
-                    console.log(completedForm)
-                    API.saveJournalEntry(completedForm)
-                    .then( () => {
-                        document.querySelector(".entryLog").innerHTML = ""})
-                    .then( () => {
-                        API.getJournalEntries()
-                        //take data and add to DOM
-                        .then(data => injectDOM.addToDom(data));})
+                }
+            console.log(completedForm)
+            API.saveJournalEntry(completedForm)
+                .then( () => {
+                    document.querySelector("#entryLog").innerHTML = ""
+                    API.getJournalEntries()
+                    //take data and add to DOM
+                    .then(data => injectDOM.addToDom(data));
+                    })
 
 
 }})
