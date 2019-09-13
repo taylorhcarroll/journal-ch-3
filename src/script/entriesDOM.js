@@ -23,6 +23,10 @@ const injectDOM = {
         entries.forEach(item => {
             journalContainer.innerHTML += webComponent.entryHTML(item);
         })
-    }
+    },
+    addFormToDom: () => {
+        console.log("add Form to dom called")
+        document.querySelector("#journalForm").innerHTML = webComponent.formHTML()
+        }
 };
 export default injectDOM

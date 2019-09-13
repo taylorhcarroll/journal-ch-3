@@ -3,9 +3,10 @@ import injectDOM from "./entriesDOM.js";
 import dropdown from "./moodDropDown.js";
 
 console.log("If you can see this your journal JS file is properly linked.")
-
+//makes the mood dropdown
 dropdown.moodDropdown();
-
+//dynamically generates the formHTML
+injectDOM.addFormToDom();
 //this makes sure we have journal entries on the page when it loads  
 API.getJournalEntries().then(data => injectDOM.addToDom(data));
 
@@ -42,7 +43,7 @@ document.querySelector("#saveButton")
                     //clears entry log to be repopulated by the database with the new entry//
                     document.querySelector("#entryLog").innerHTML = ""
                     API.getJournalEntries()
-                    //take data and add to DOM
+                    //then take data and add to DOM
                     .then(data => injectDOM.addToDom(data));
                     })
 
