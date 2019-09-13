@@ -15,32 +15,11 @@
       "mood": "ok"
     },
     {
-      "date": "2019-09-24",
-      "mood": "JOY",
-      "concept": "test",
-      "content": "test ",
-      "id": 3
-    },
-    {
-      "date": "2019-09-16",
-      "mood": "JOY",
-      "concept": "test2",
-      "content": " test2",
-      "id": 4
-    },
-    {
       "date": "2019-09-10",
       "mood": "JOY",
       "concept": "test3",
       "content": " test",
       "id": 5
-    },
-    {
-      "date": "2019-09-10",
-      "mood": "JOY",
-      "concept": "test4",
-      "content": " test 4",
-      "id": 6
     },
     {
       "date": "2019-09-12",
@@ -78,13 +57,6 @@
       "id": 11
     },
     {
-      "date": "2019-09-10",
-      "mood": "PUMPED",
-      "concept": "print to DOM",
-      "content": "look at meeeeeee! ",
-      "id": 12
-    },
-    {
       "date": "2019-09-01",
       "mood": "CURIOSITY",
       "concept": "test sort",
@@ -104,27 +76,6 @@
       "concept": "test",
       "content": "test ",
       "id": 15
-    },
-    {
-      "date": "2019-09-22",
-      "mood": "JOY",
-      "concept": "test",
-      "content": "test ",
-      "id": 16
-    },
-    {
-      "date": "2019-09-22",
-      "mood": "JOY",
-      "concept": "test",
-      "content": "test 99",
-      "id": 17
-    },
-    {
-      "date": "2019-09-25",
-      "mood": "JOY",
-      "concept": "testing the button",
-      "content": " button button",
-      "id": 18
     }
   ],
   "moods": [

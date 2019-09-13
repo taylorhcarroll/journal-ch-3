@@ -50,5 +50,19 @@ document.querySelector("#saveButton")
 }})
 
 //delete button to remove entries from json db and refresh DOM//
-const = document.querySelector("#entryLog").addEventListener("click", (event) => {
+const resultsContainer =  document.querySelector("#entryLog").addEventListener("click", (event) => {
     if (event.target.id.startsWith("deleteEntry--")) {
+        //extract entry ID from button ID//
+        console.log(event, event.target.id.split("--")[1])
+        document.querySelector("#entryLog").innerHTML = "";
+        API.deleteEntry(event.target.id.split("--")[1])
+            .then(() => {
+                //clear entryLog then populate with current db//
+                API.getJournalEntries().then(data => injectDOM.addToDom(data));
+                
+            })
+    } else if (event.target.id.startsWith("editEntry")) {
+        console.log("edit", event.target.id.split("--")[1])
+        editForm(event.target.id.split("--")[1]) 
+    }
+})
