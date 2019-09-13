@@ -5,13 +5,13 @@ console.log("If you can see this your data JS file is properly linked.")
 const API = {
     getMoods: () => {
         return fetch("http://localhost:8088/moods")
-        .then(response => response.json())
+            .then(response => response.json())
     },
     getJournalEntries: () => {
         return fetch("http://localhost:8088/journalArray?_sort=date&_order=desc")
-        .then(response => 
-            response.json()
-        );
+            .then(response =>
+                response.json()
+            );
     },
     saveJournalEntry: entry => {
         return fetch("http://localhost:8088/journalArray", {
@@ -25,19 +25,23 @@ const API = {
     deleteEntry: (id) => {
         return fetch(`http://localhost:8088/journalArray/${id}`, {
             method: "DELETE"
-        }).then(response => response.json())        
+        }).then(response => response.json())
     },
     editEntry: (id) => {
         const entryUpdateObj = {
             name: document.querySelector("#entryName").value
         }
-        return fetch(`http://localhost:8088/journalArray/${id}`,{
+        return fetch(`http://localhost:8088/journalArray/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(entryUpdateObj)
         }).then(response => response.json())
+    },
+    getSpecificEntry: (id) => {
+        return fetch(`http://localhost:8088/journalArray/${id}`)
+            .then(response => response.json())
     }
 };
 
