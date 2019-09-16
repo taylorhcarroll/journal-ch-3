@@ -5,15 +5,15 @@ import API from "./journalAPI.js";
 
 const dropdown = {
     moodDropdown: () => {
-        API.getMoods().then(moods => {
+       return API.getMoods().then(moods => {
             console.log(moods);
             const moodDropdown = document.querySelectorAll("#mood-Input")
             moodDropdown.forEach(element => {
                 moods.forEach(mood => {
-                element.innerHTML += `<option id="type-${mood.id}" value="${mood.name}">${mood.name}</option>`;
+                element.innerHTML += `<option id="type-${mood.id}" value="${mood.id}">${mood.name}</option>`;
+                });
             });
         });
-    });
-}
+    }
 };
 export default dropdown;

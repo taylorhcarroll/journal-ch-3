@@ -8,7 +8,7 @@ const API = {
             .then(response => response.json())
     },
     getJournalEntries: () => {
-        return fetch("http://localhost:8088/journalArray?_sort=date&_order=desc")
+        return fetch("http://localhost:8088/journalArray?_sort=date&_order=desc&_expand=mood")
             .then(response =>
                 response.json()
             );

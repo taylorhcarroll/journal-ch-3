@@ -10,8 +10,6 @@ injectDOM.addFormToDom();
 //this makes sure we have journal entries on the page when it loads  
 API.getJournalEntries().then(data => injectDOM.addToDom(data));
 
-
-
 //add event listener for submit button
 document.querySelector("#saveButton")
 	.addEventListener("click", event => {
@@ -69,9 +67,34 @@ const resultsContainer =  document.querySelector("#entryLog").addEventListener("
         console.log("edit", event.target.id.split("--")[1])
         const formContainer = document.querySelector("#journalForm");
         formContainer.innerHTML = "";
-        API.getSpecificEntry(event.target.id.split("--")[1]) 
+        let entryIdtoEdit = event.target.id.split("--")[1]
         injectDOM.addEditFormToDom()
         const editContainer = document.querySelector("#journalForm")
         editContainer.scrollIntoView();
+        dropdown.moodDropdown().then(() => editFormFields(entryIdtoEdit))
+
+        console.log(editFormFields(entryIdtoEdit))
+           
     }
 })
+
+
+
+const editFormFields  = entryIdtoEdit => {
+    let hiddenId = document.querySelector("#entryId")
+    let dateInput = document.querySelector("#edate")
+    let moodInput = document.querySelector("#emood")
+    let conceptsInput = document.querySelector("#econcept")
+    let entryInput = document.querySelector("#econtent")
+
+    API.getSpecificEntry(entryIdtoEdit).then(entry => {
+        hiddenId.value = entry.id;
+        moodInput.value = entry.mood;
+        dateInput.value = entry.date;
+        conceptsInput.value = entry.concept;
+        entryInput.value = entry.content;
+        console.log("editFormFields is called")
+        console.log("moodInput.value: " + moodInput.value)
+        console.log("dateInput.value: " + dateInput.value)
+})}
+

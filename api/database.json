@@ -1,32 +1,46 @@
 {
   "journalArray": [
     {
-      "id": 1,
-      "concept": "Fetch API",
-      "date": "08/07/19",
-      "content": "We learned about array methods.",
-      "mood": "ok"
+      "date": "2019-09-09",
+      "moodId": "5",
+      "concept": "hello",
+      "content": "wow gee willikers",
+      "id": 3
     },
     {
-      "id": 2,
-      "concept": "Array methods",
-      "date": "08/06/19",
-      "content": "We learned about array methods.",
-      "mood": "ok"
+      "date": "2019-09-09",
+      "moodId": "4",
+      "concept": "testing DOM stuff",
+      "content": "yep",
+      "id": 4
     },
     {
-      "date": "2019-09-01",
-      "mood": "CURIOSITY",
-      "concept": "test sort",
-      "content": "test sort ",
-      "id": 13
+      "date": "2019-09-02",
+      "moodId": "3",
+      "concept": "testing out stuff",
+      "content": " why does the mood not populate?",
+      "id": 5
     },
     {
-      "date": "2019-09-13",
-      "mood": "DETERMINATION",
-      "concept": "Dynamically generate form",
-      "content": "test it out ",
-      "id": 16
+      "date": "2019-09-02",
+      "moodId": "2",
+      "concept": "testing out stuff",
+      "content": " why does the mood not populate?",
+      "id": 6
+    },
+    {
+      "date": "2019-09-18",
+      "moodId": "1",
+      "concept": "reverted ",
+      "content": "revert emotions ",
+      "id": 9
+    },
+    {
+      "date": "2019-09-19",
+      "mood": "3",
+      "concept": "the field stop populating",
+      "content": "again ",
+      "id": 10
     }
   ],
   "moods": [
