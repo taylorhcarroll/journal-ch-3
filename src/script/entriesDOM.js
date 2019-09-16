@@ -27,6 +27,10 @@ const injectDOM = {
     addFormToDom: () => {
         console.log("add Form to dom called")
         document.querySelector("#journalForm").innerHTML = webComponent.formHTML()
+        },
+    addEditFormToDom: () => {
+        console.log("add Form to dom called")
+        document.querySelector("#journalForm").innerHTML = webComponent.editFormHTML()
         }
 };
 export default injectDOM

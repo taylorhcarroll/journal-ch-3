@@ -39,6 +39,35 @@ const webComponent = {
            <button class="button" id="saveButton" type="Button">Submit</button>
         </article>
         </form>`
+    },
+//put in items being passed from entryHTML back into here
+    editFormHTML: function(item) {
+        return `<h3>Journal Entry</h3>
+        <form action="">
+           <article>
+           <fieldset>
+              <label for="journalDate">Date of entry</label>
+              <input type="date" name="journalDate" id="date" required>
+           </fieldset>
+           <fieldset>
+                 <label for="conceptsCovered">Concepts Covered</label>
+                 <input type="text" name="conceptsCovered" id="concept" required>
+           </fieldset>
+           <fieldset>
+                 <label for="journalEntry">Journal Entry</label>
+                 <textarea type="text" name="journalEntry" id="content" required> </textarea>
+           </fieldset>
+           <fieldset>
+                 <label for="journalMood">Mood for the day</label>
+                 <select type="text" name="journalMood" id="mood">
+                          <optgroup id="mood-Input">
+                             <option disabled value="default">Select Your Mood</option>
+                          </optgroup> 
+                 </select> 
+           </fieldset>
+           <button class="button" id="saveButton" type="Button">Save Changes</button>
+        </article>
+        </form>`
     }
 };
 

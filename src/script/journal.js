@@ -62,8 +62,16 @@ const resultsContainer =  document.querySelector("#entryLog").addEventListener("
                 API.getJournalEntries().then(data => injectDOM.addToDom(data));
                 
             })
+//otherwise if you see an edit button, replace the form with an edit form// 
+//you need to refactor this into a .then statment like above, 
+//also consider populating a modal instead//
     } else if (event.target.id.startsWith("editEntry")) {
         console.log("edit", event.target.id.split("--")[1])
-        editForm(event.target.id.split("--")[1]) 
+        const formContainer = document.querySelector("#journalForm");
+        formContainer.innerHTML = "";
+        API.getSpecificEntry(event.target.id.split("--")[1]) 
+        injectDOM.addEditFormToDom()
+        const editContainer = document.querySelector("#journalForm")
+        editContainer.scrollIntoView();
     }
 })

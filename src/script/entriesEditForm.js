@@ -2,7 +2,7 @@
 import API from "./journalAPI.js";
 
 const editForm = (entryID) => {
-    const hiddenEntryID = document.querySelector("#entryId")
+    const editEntryID = document.querySelector("#entryId")
     const editConcept = document.querySelector("#entryConcept")
     const editDate = document.querySelector("#entryDate")
     const editContent = document.querySelector("#entryContent")
@@ -10,7 +10,7 @@ const editForm = (entryID) => {
 
     API.getSpecificEntry(entryID)
     .then(response => {
-        hiddenEntryID.value = entryId;
+        editEntryID.value = entryId;
         editConcept.value = response.concept;
         editDate.value = response.date;
         editContent.value = response.content;
