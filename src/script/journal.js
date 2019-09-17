@@ -72,13 +72,9 @@ const resultsContainer =  document.querySelector("#entryLog").addEventListener("
         const editContainer = document.querySelector("#journalForm")
         editContainer.scrollIntoView();
         dropdown.moodDropdown().then(() => editFormFields(entryIdtoEdit))
-
-        console.log(editFormFields(entryIdtoEdit))
            
     }
 })
-
-
 
 const editFormFields  = entryIdtoEdit => {
     let hiddenId = document.querySelector("#entryId")
@@ -93,8 +89,4 @@ const editFormFields  = entryIdtoEdit => {
         dateInput.value = entry.date;
         conceptsInput.value = entry.concept;
         entryInput.value = entry.content;
-        console.log("editFormFields is called")
-        console.log("moodInput.value: " + moodInput.value)
-        console.log("dateInput.value: " + dateInput.value)
 })}
-
