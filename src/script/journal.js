@@ -31,7 +31,7 @@ document.querySelector("#saveButton")
         //create object
             const completedForm = {
     				date: dateInput,
-    				mood: moodInput,
+    				moodId: moodInput,
     				concept: conceptsInput,
                     content: entryInput 
                 }
