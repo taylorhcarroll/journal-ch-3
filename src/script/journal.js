@@ -83,11 +83,14 @@ const editFormFields  = entryIdtoEdit => {
     let moodInput = document.querySelector("#eMood")
     let conceptsInput = document.querySelector("#econcept")
     let entryInput = document.querySelector("#econtent")
-
+    
     API.getSpecificEntry(entryIdtoEdit).then(entry => {
+        console.log(entry)
         hiddenId.value = entry.id;
-        moodInput.value = entry.mood;
+        moodInput.value = entry.moodId;
         dateInput.value = entry.date;
         conceptsInput.value = entry.concept;
         entryInput.value = entry.content;
+        console.log("moodInput.value is:" + moodInput.value)
+        console.log("entry.mood is:" + entry.mood)
 })}
