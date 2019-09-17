@@ -72,6 +72,7 @@ const resultsContainer =  document.querySelector("#entryLog").addEventListener("
         const editContainer = document.querySelector("#journalForm")
         editContainer.scrollIntoView();
         dropdown.moodDropdown().then(() => editFormFields(entryIdtoEdit))
+        
            
     }
 })
@@ -79,7 +80,7 @@ const resultsContainer =  document.querySelector("#entryLog").addEventListener("
 const editFormFields  = entryIdtoEdit => {
     let hiddenId = document.querySelector("#entryId")
     let dateInput = document.querySelector("#edate")
-    let moodInput = document.querySelector("#emood")
+    let moodInput = document.querySelector("#eMood")
     let conceptsInput = document.querySelector("#econcept")
     let entryInput = document.querySelector("#econtent")
 

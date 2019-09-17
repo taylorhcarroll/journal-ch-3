@@ -60,7 +60,7 @@ const webComponent = {
            </fieldset>
            <fieldset>
                  <label for="journalMood">Mood for the day</label>
-                 <select type="text" name="journalMood" id="emood">
+                 <select type="text" name="journalMood" id="eMood">
                           <optgroup id="mood-Input">
                              <option disabled value="default">Select Your Mood</option>
                           </optgroup> 
